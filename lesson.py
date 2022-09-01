@@ -36,4 +36,11 @@ s2 = 'abcdefg'\
 print("s1 = "+s1[-7], "s2 = "+s2[-6], sep=',')
 print(s1[2:8])
 idx = 3
-print(s2[:idx])
+print(len(s2[:idx]))
+s = 'Hi my name is hiroaki. I was born in Yokohama. I\'m living in Yokohama.'
+print(s.startswith('Hi'), s.find('in'), s.rfind('Yokohama'), s.count('Yokohama'), sep=',')
+print(s.capitalize(), '\n', s.title())
+print('a is {}'.format('a'))
+print('a is {2} {1} {0}'.format(1, 2, 3))
+s = 'I\'m {1} {0}. {1} is first name.'
+print(s.format('Makino', 'Hiroaki'))
